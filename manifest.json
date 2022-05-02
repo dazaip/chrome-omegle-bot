@@ -1,0 +1,26 @@
+{
+    "name": "Omegle Bot",
+    "description": "Automatically send chats on Omegle",
+    "version": "0.0.1",
+    "version_name": "Alpha",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.omegle.com/*"],
+            "js": ["/dist/injectContent.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "/dist/background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["/dist/*"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

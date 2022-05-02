@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "sourceMap": false,
+        "declaration": false,
+        "incremental": false,
+        "target": "es2015",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "strict": true,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "removeComments": true,
+        "lib": ["ES2015", "ES2016", "ES2018", "ES2019.Object", "ES2018.AsyncIterable", "ES2020.String", "ES2019.Array", "DOM", "DOM.Iterable"],
+        "rootDir": "src/",
+        "outDir": "dist/",
+        "esModuleInterop": true,
+        "useDefineForClassFields": true
+    },
+    "include": ["src/"]
+}
